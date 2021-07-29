@@ -16,18 +16,21 @@
     <!-- Main Container -->
     <section id="main-container">
       <!-- Taking the bill -->
-      <div id="container bill-container">
+      <div id="billcontainer" class="container">
         <label for="txtamount">Enter the Bill</label>
-        <input type="number" id="txtamount" placeholder="0"></input>
+        <input type="number" id="txtamount" class="txtinput" placeholder="0"></input>
       </div>
+      
+
      <!-- Button -->
       <button id="next-btn">Next</button>
 
       <!-- Amount of cash recieved -->
-      <div id="container cash-container">
+      <div id="cashcontainer"  class="container">
           <label for="txtcash">Cash Given</label>
-          <input type="number" id="txtcash" placeholder="0" ></input>
+          <input type="number" id="txtcash" class="txtinput" placeholder="0" ></input>
       </div>
+      <h3 id="textfield"></h3>
     </section>
 
     <div id="secondary-container">
@@ -81,7 +84,8 @@
 
       </ul>
     </footer>
-
+   
     <script src="app.js"></script>
+    
   </body>
 </html>
