@@ -42,7 +42,8 @@ if(nextbtn.innerText==="Next"){
     if((txtamount.value>0 && txtamount.value <100000) && (txtcash.value > 0 && txtcash.value <=102000)){
 
        totalBill+=parseInt(txtamount.value);
-       todaytotal.innerText= `Session Earnings:${totalBill}`;
+       todaytotal.innerText= `Session Earnings:Rs${totalBill}`;
+      
        var CashToReturn  = txtcash.value-txtamount.value;
        
 
@@ -62,11 +63,11 @@ if(nextbtn.innerText==="Next"){
         
             
         } else {
-              textfield.innerText = `Cash Given By Customer Is Rs.${-CashToReturn} less!`
+              textfield.innerText = `Cash Given By Customer Is Rs${-CashToReturn} less!`
               secondarycontainer.style.visibility="hidden";
          }
     } else{
-        textfield.innerText="The cash entered is way higher! "
+        textfield.innerText="The cash entered is invalid! "
         secondarycontainer.style.visibility="hidden";
         
       }
