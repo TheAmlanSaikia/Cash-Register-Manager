@@ -32,6 +32,7 @@ if(nextbtn.innerText==="Next"){
      if(txtamount.value > 0 && txtamount.value <100000){
      cashcontainer.style.visibility="visible";
      nextbtn.innerText="Submit";
+     textfield.innerText="";
 
      }else{
        textfield.innerText="Error: Enter Valid Bill Amount!";
